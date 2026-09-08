@@ -15,5 +15,6 @@ body {
   --color-raised: rgba(61, 53, 50, 0.683);
   --color-text: #ada39c;
   --color-amber: #d69a6f;
+  --color-heading: #f4efeb;
   --font-ui: "Inter", system-ui, -apple-system, sans-serif;
 }
