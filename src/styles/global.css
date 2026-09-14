@@ -7,7 +7,6 @@ body {
   background-color: #19120d;
   border: #ada39c;
   font-family: var(--font-ui);
-  letter-spacing: 0.1px;
 }
 
 @theme {
