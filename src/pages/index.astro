@@ -2,11 +2,16 @@
 import Layout from '../layouts/Layout.astro';
 import Header from "../components/TSX/Home/header";
 import Hero from "../components/TSX/Home/hero";
-
+import Projects from "../components/TSX/Home/projects";
+import Skills from "../components/TSX/Home/skills";
 ---
 
 <Layout>
-	<Header client:load />
-	<Hero client:idle />
-	<Hero client:idle />
+	
+	<main>
+		<Header client:load />
+		<Hero />
+		<Projects />
+		<Skills />
+	</main>
 </Layout>
