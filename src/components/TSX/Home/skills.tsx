@@ -10,7 +10,7 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="mx-auto w-full max-w-5xl scroll-mt-40 sm:scroll-mt-28 px-5 py-18">
-      <SectionHeading index="02" eyebrow="Skills" title="My Tech Stack." />
+      <SectionHeading index="02" eyebrow="Skills" title="My Tech Stack" />
 
       <dl className="">
         {skills.map((skill) => (

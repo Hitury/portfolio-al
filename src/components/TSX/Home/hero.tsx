@@ -5,16 +5,16 @@ export default function Hero() {
             className="flex min-h-[calc(100svh-88px)] scroll-mt-40 sm:scroll-mt-28 flex-col items-center justify-center px-5 py-16"
         >
             <h1 className="text-center font-bold tracking-tight">
-                <span className="text-heading block text-5xl sm:text-6xl">Akshay Lautan</span>
-                <span className="text-amber mt-1 block text-3xl font-semibold sm:text-4xl">
-                    Software Developer
+                <span className="text-heading block text-5xl sm:text-6xl">Hello, I'm Akshay Lautan</span>
+                <span className="text-amber mt-2 block text-3xl font-semibold sm:text-4xl">
+                    Front-End Developer
                 </span>
             </h1>
 
             <p className="text-text mt-6 max-w-md text-center leading-relaxed text-balance">
-                Web/Software Developer based in the Netherlands
+                Web/Software Developer, based in the Netherlands.
+                
             </p>
-
             <div className="mt-8 flex flex-row items-center justify-center gap-4">
                 <a
                     href="#projects"

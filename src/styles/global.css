@@ -11,12 +11,12 @@ html {
 }
 
 body {
-  padding: 0;
   margin: 0;
   box-sizing: border-box;
   background-color: #19120d;
   border: #ada39c;
   font-family: var(--font-ui);
+  padding: 0;
 }
 
 @theme {
@@ -25,5 +25,49 @@ body {
   --color-text: #ada39c;
   --color-amber: #d69a6f;
   --color-heading: #f4efeb;
+  --color-surface: #211a15;
   --font-ui: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+/* Modal dialogs (project-modal.tsx): dimmed, blurred backdrop and a
+   fade-and-lift transition in both directions. */
+.modal {
+  scrollbar-color: var(--color-line) transparent;
+  scrollbar-width: thin;
+}
+
+.modal::backdrop {
+  background-color: rgb(10 7 5 / 0.72);
+  backdrop-filter: blur(6px);
+}
+
+.modal:not([open]),
+.modal:not([open])::backdrop {
+  opacity: 0;
+}
+
+.modal:not([open]) {
+  translate: 0 1rem;
+}
+
+@starting-style {
+  .modal[open],
+  .modal[open]::backdrop {
+    opacity: 0;
+  }
+
+  .modal[open] {
+    translate: 0 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .modal,
+  .modal::backdrop {
+    transition:
+      opacity 250ms ease,
+      translate 250ms ease,
+      display 250ms allow-discrete,
+      overlay 250ms allow-discrete;
+  }
 }

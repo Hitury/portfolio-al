@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const sectionIds = ["home", "projects", "skills"];
+const sectionIds = ["home", "projects", "skills", "experience"];
 
 const groupClass =
   "contents sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-7 sm:rounded-2xl sm:border sm:border-solid sm:border-line sm:bg-raised/75 sm:px-7 sm:py-3 sm:backdrop-blur-sm";
@@ -17,18 +17,32 @@ export default function Header() {
     const sections = sectionIds
       .map((id) => document.getElementById(id))
       .filter((section): section is HTMLElement => section !== null);
-      
+
+    // The last section can be too short to ever reach the middle band,
+    // so reaching the bottom of the page activates it instead.
+    let inBand = sectionIds[0];
+    const update = () => {
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      setActive(atBottom ? sectionIds[sectionIds.length - 1] : inBand);
+    };
+
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting) setActive(entry.target.id);
+          if (entry.isIntersecting) inBand = entry.target.id;
         }
+        update();
       },
       { rootMargin: "-45% 0px -50% 0px" }
     );
 
     sections.forEach((section) => observer.observe(section));
-    return () => observer.disconnect();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", update);
+    };
   }, []);
 
   return (
@@ -47,7 +61,9 @@ export default function Header() {
             <a href="#skills" className={linkClass(active === "skills")}>
               Skills
             </a>
-            <a className={linkClass(false)}>Experience</a>
+            <a href="#experience" className={linkClass(active === "experience")}>
+              Experience
+            </a>
           </div>
           <div className={groupClass}>
             <a className={linkClass(false)}>Contact</a>
