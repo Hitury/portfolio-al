@@ -56,7 +56,7 @@ function Banner({ project }: { project: Project }) {
   const Icon = projectIcons[project.icon];
 
   return (
-    <div className="border-line relative grid h-52 place-items-center overflow-hidden border-b border-solid bg-[radial-gradient(90%_130%_at_50%_0%,color-mix(in_oklab,var(--color-amber)_26%,transparent),transparent_70%)] sm:h-64">
+    <div className="border-line relative grid h-52 place-items-center overflow-hidden border-b border-solid sm:h-64">
       {project.video ? (
         <video
           className="size-full object-cover"

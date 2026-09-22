@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const sectionIds = ["home", "projects", "skills", "experience"];
+const sectionIds = ["home", "about", "projects", "skills", "experience", "contact"];
 
 const groupClass =
   "contents sm:flex sm:flex-row sm:items-center sm:justify-center sm:gap-7 sm:rounded-2xl sm:border sm:border-solid sm:border-line sm:bg-raised/75 sm:px-7 sm:py-3 sm:backdrop-blur-sm";
@@ -55,6 +55,9 @@ export default function Header() {
             </a>
           </div>
           <div className={groupClass}>
+            <a href="#about" className={linkClass(active === "about")}>
+              About
+            </a>
             <a href="#projects" className={linkClass(active === "projects")}>
               Projects
             </a>
@@ -66,7 +69,7 @@ export default function Header() {
             </a>
           </div>
           <div className={groupClass}>
-            <a className={linkClass(false)}>Contact</a>
+            <a href="#contact" className={linkClass(active === "contact")}>Contact</a>
           </div>
         </nav>
       </div>

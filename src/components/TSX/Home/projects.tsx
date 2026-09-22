@@ -16,7 +16,7 @@ export default function Projects({ projects }: { projects: Project[] }) {
 
   return (
     <section id="projects" className="mx-auto w-full max-w-5xl scroll-mt-40 sm:scroll-mt-28 px-5 py-24">
-      <SectionHeading index="01" eyebrow="Projects" title="Things I've built" />
+      <SectionHeading index="02" eyebrow="Projects" title="Things I've built" />
 
       <div className="grid gap-4 sm:grid-cols-2">
         {projects.map((project) => (

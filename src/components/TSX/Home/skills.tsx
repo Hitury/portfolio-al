@@ -1,8 +1,8 @@
 import SectionHeading from "./section-heading";
 
 const skills = [
-  { group: "Languages", items: ["TypeScript", "JavaScript", "Python", "SQL"] },
-  { group: "Frontend", items: ["React", "Astro", "Tailwind CSS", "HTML & CSS"] },
+  { group: "Languages", items: ["TypeScript", "JavaScript", "Rust", "SQL"] },
+  { group: "Frontend", items: ["React", "Astro", "Next.js", "Tailwind CSS", "HTML & CSS"] },
   { group: "Backend", items: ["Node.js", "Express", "PostgreSQL", "REST APIs"] },
   { group: "Tooling", items: ["Git", "Vite", "Figma"] },
 ];
@@ -10,12 +10,12 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skills" className="mx-auto w-full max-w-5xl scroll-mt-40 sm:scroll-mt-28 px-5 py-18">
-      <SectionHeading index="02" eyebrow="Skills" title="My Tech Stack" />
+      <SectionHeading index="03" eyebrow="Skills" title="My Tech Stack" />
 
       <dl className="">
         {skills.map((skill) => (
           <div key={skill.group} className="grid gap-3 py-6 sm:grid-cols-[9rem_1fr] sm:gap-10">
-            <dt className="text-text/55 text-xs font-medium tracking-[0.2em] uppercase sm:pt-1.5">
+            <dt className="text-text/55 text-xs font-medium tracking-widest uppercase sm:pt-1.5">
               {skill.group}
             </dt>
             <dd className="flex flex-wrap gap-2">

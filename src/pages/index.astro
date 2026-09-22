@@ -4,9 +4,11 @@ import { getImage } from "astro:assets";
 import Layout from '../layouts/Layout.astro';
 import Header from "../components/TSX/Home/header";
 import Hero from "../components/TSX/Home/hero";
+import About from "../components/TSX/Home/about";
 import Projects from "../components/TSX/Home/projects";
 import Skills from "../components/TSX/Home/skills";
 import Experience from "../components/TSX/Home/experience";
+import Contact from "../components/TSX/Home/contact";
 
 // One card per Markdown file in src/content/projects, ordered by `order`.
 const entries = (await getCollection("projects")).sort((a, b) => a.data.order - b.data.order);
@@ -28,8 +30,10 @@ const projects = await Promise.all(
 	<main>
 		<Header client:load />
 		<Hero />
+		<About />
 		<Projects client:idle projects={projects} />
 		<Skills />
 		<Experience />
+		<Contact client:visible />
 	</main>
 </Layout>

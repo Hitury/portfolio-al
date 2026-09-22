@@ -38,6 +38,18 @@ export const ExternalIcon = (props: IconProps) => (
   </Icon>
 );
 
+export const CheckIcon = (props: IconProps) => (
+  <Icon {...props}>
+    <path d="M20 6 9 17l-5-5" />
+  </Icon>
+);
+
+export const SpinnerIcon = (props: IconProps) => (
+  <Icon {...props}>
+    <path d="M21 12a9 9 0 1 1-6.22-8.56" />
+  </Icon>
+);
+
 export const DownloadIcon = (props: IconProps) => (
   <Icon {...props}>
     <path d="M12 4v11m-4.5-4.5L12 15l4.5-4.5M5 20h14" />

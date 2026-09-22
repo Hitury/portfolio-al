@@ -17,17 +17,17 @@ export default function Hero() {
             </p>
             <div className="mt-8 flex flex-row items-center justify-center gap-4">
                 <a
-                    href="#projects"
+                    href="#contact"
                     className="bg-amber hover:bg-amber/85 min-w-30 select-none cursor-pointer rounded-3xl border border-solid border-transparent px-6 py-3 text-center font-medium text-[#19120d] transition-all duration-250 active:scale-96"
                 >
-                    Projects
+                    Contact
                 </a>
-                <a
-                    href="#skills"
+                {/* <a
+                    href="#contact"
                     className="bg-raised/40 border-line min-w-30 select-none text-text hover:text-amber cursor-pointer rounded-3xl border border-solid px-6 py-3 text-center font-medium transition-all active:scale-96 duration-250"
                 >
                     Skills
-                </a>
+                </a> */}
             </div>
         </section>
     )
