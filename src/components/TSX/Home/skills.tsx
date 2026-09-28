@@ -1,8 +1,8 @@
 import SectionHeading from "./section-heading";
 
 const skills = [
-  { group: "Languages", items: ["TypeScript", "JavaScript", "Rust", "SQL"] },
-  { group: "Frontend", items: ["React", "Astro", "Next.js", "Tailwind CSS", "HTML & CSS"] },
+  { group: "Languages", items: ["TypeScript", "JavaScript", "Rust", "SQL", "Tailwind CSS", "HTML & CSS"] },
+  { group: "Frontend", items: ["React", "Astro", "Next.js"] },
   { group: "Backend", items: ["Node.js", "Express", "PostgreSQL", "REST APIs"] },
   { group: "Tooling", items: ["Git", "Vite", "Figma"] },
 ];

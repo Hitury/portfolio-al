@@ -26,7 +26,8 @@ export default function About() {
             I have an ambitious long term goal to leave a legacy as a music artist, wanting to create a story that is capable of reaching people.
           </p>
         </div>
-
+        
+        {/* Display fact items in the array */}
         <dl className="grid grid-cols-3 gap-4 sm:col-start-1 sm:row-start-1 sm:flex sm:flex-col sm:gap-6 sm:pt-3">
           {facts.map(({ label, value }) => (
             <div key={label}>
