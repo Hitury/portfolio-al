@@ -133,8 +133,6 @@ export default function ProjectModal({ ref }: { ref: Ref<ProjectModalHandle> }) 
             ref={cardRef}
             className="border-line bg-surface w-full max-w-3xl overflow-hidden rounded-3xl border border-solid"
           >
-            <Banner project={project} />
-
             <div className="p-6 sm:p-10">
               <span className="text-amber text-xs font-medium tracking-[0.2em] uppercase">{project.type}</span>
 
@@ -169,7 +167,6 @@ export default function ProjectModal({ ref }: { ref: Ref<ProjectModalHandle> }) 
 
               <div className="border-line bg-raised/20 mt-8 rounded-2xl border border-solid p-5 sm:p-6">
                 <p className="text-heading flex items-center gap-2.5 font-semibold">
-                  <CodeIcon className="text-amber size-4.5" />
                   Tech Stack Highlights
                 </p>
                 <ul className="mt-4 grid gap-x-6 gap-y-2.5 sm:grid-cols-2">
