@@ -1,10 +1,10 @@
 import SectionHeading from "./section-heading";
 
 const skills = [
-  { group: "Languages", items: ["TypeScript", "JavaScript", "Rust", "SQL", "Tailwind CSS", "HTML & CSS"] },
-  { group: "Frontend", items: ["React", "Astro", "Next.js"] },
+  { group: "Languages", items: ["TypeScript", "JavaScript", "Rust", "SQL", "CSS", "HTML"] },
+  { group: "Web Frameworks", items: ["React", "Astro", "Next.js"] },
   { group: "Backend", items: ["Node.js", "Express", "PostgreSQL", "REST APIs"] },
-  { group: "Tooling", items: ["Git", "Vite", "Figma"] },
+  { group: "Tooling", items: ["Git", "Vite", "Figma", "Linux"] },
 ];
 
 export default function Skills() {

@@ -14,11 +14,9 @@ icon: checklist
 # image: ./todo-app.png
 # video: /projects/todo-app.webm
 
-website:
+download:
   label: Visit the website
   href: https://next-js-15-chatsy.vercel.app/
-  note: This website a production-stage vercel deployment, and is not reflective of the final chatsy product deployed at chatsy.org
+  note: This website is a production-stage vercel deployment, and is not reflective of the final chatsy product deployed at chatsy.org
 ---
 
-This Todo-App is designed to make daily task management effortless and efficient. Originally built
-as a practice project, it became a tool i use on a daily basis, and continue to update it overtime.

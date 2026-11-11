@@ -3,7 +3,7 @@ import SectionHeading from "./section-heading";
 const experience = [
   
   {
-    period: "2025 - 2026",
+    period: "AUG 2025 - FEB 2026",
     role: "Full Stack Developer",
     org: "Teqqed",
     type: "Internship",

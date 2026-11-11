@@ -5,6 +5,7 @@ import {
   CloseIcon,
   CodeIcon,
   DownloadIcon,
+  ArrowRightIcon,
   ExternalIcon,
   GitHubIcon,
   projectIcons,
@@ -45,7 +46,7 @@ function getActions(project: Project): Action[] {
   const actions: Action[] = [];
   if (project.download) {
     const { href, label } = project.download;
-    actions.push({ href, label, Icon: DownloadIcon, isDownload: true });
+    actions.push({ href, label, Icon: ArrowRightIcon, isDownload: true });
   }
   if (project.live) actions.push({ href: project.live, label: "View Live Site", Icon: ExternalIcon });
   if (project.source) actions.push({ href: project.source, label: "Source Code", Icon: GitHubIcon });
