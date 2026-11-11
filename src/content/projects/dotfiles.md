@@ -5,7 +5,7 @@ status: Complete
 order: 1
 summary: These are the dotfiles for my Arch Linux setup, which includes my niri + noctalia configuration.
 stack: [KDL, TOML]
-highlights: [Tauri, React, TypeScript]
+highlights: [Arch Linux, Workflow, Efficiency]
 icon: checklist
 source: https://github.com/Hitury/niri-dotfiles
 

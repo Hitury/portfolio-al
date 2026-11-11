@@ -5,7 +5,7 @@ status: Complete
 order: 1
 summary: A Multi-User AI Platform built during my internship, where i was tasked with creating the Front-End alongside another intern, and setting up the CMS for dynamic Solutions/Insights adjustments.
 stack: [TypeScript, React, Sanity CMS]
-highlights: [Tauri, React, TypeScript]
+highlights: [NextJS Framework, Supabase (PostgreSQL)]
 icon: checklist
 
 # A desktop app can't run on the page, so show it and offer the installer.
